@@ -418,8 +418,7 @@ public class ModelResolver extends AbstractModelConverter implements ModelConver
                 Schema mapModel = new MapSchema().additionalProperties(addPropertiesSchema);
                 mapModel.name(name);
                 model = mapModel;
-                //return model;
-            } else if (valueType != null) {
+                            } else if (valueType != null) {
                 if (ReflectionUtils.isSystemType(type) && !annotatedType.isSchemaProperty() && !annotatedType.isResolveAsRef()) {
                     context.resolve(new AnnotatedType().type(valueType).jsonViewAnnotation(annotatedType.getJsonViewAnnotation()));
                     return null;
@@ -2024,3 +2023,4 @@ public class ModelResolver extends AbstractModelConverter implements ModelConver
         }
     }
 }
+
