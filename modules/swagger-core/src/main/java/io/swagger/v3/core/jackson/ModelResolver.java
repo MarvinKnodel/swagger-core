@@ -312,8 +312,7 @@ public class ModelResolver extends AbstractModelConverter implements ModelConver
 
         if (isPrimitive) {
             if (annotatedType.isSchemaProperty()) {
-                //model.name(name);
-            }
+                            }
             XML xml = resolveXml(beanDesc.getClassInfo(), annotatedType.getCtxAnnotations(), resolvedSchemaAnnotation);
             if (xml != null) {
                 model.xml(xml);
@@ -2024,3 +2023,4 @@ public class ModelResolver extends AbstractModelConverter implements ModelConver
         }
     }
 }
+
