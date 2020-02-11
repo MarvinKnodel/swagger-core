@@ -355,8 +355,7 @@ public class ModelResolver extends AbstractModelConverter implements ModelConver
         }
 
         // using deprecated method to maintain compatibility with jackson version < 2.9
-        //alternatively use AnnotatedMember jsonValueMember = beanDesc.findJsonValueAccessor();
-        final AnnotatedMethod jsonValueMethod  = beanDesc.findJsonValueMethod();
+                final AnnotatedMethod jsonValueMethod  = beanDesc.findJsonValueMethod();
         if(jsonValueMethod != null) {
             AnnotatedType aType = new AnnotatedType()
                     .type(jsonValueMethod.getType())
@@ -2024,3 +2023,4 @@ public class ModelResolver extends AbstractModelConverter implements ModelConver
         }
     }
 }
+
