@@ -647,9 +647,7 @@ public class ModelResolver extends AbstractModelConverter implements ModelConver
                         return null;
                     } else {
                         return new Schema();
-                        //t.jsonUnwrappedHandler(null);
-                        //return context.resolve(t);
-                    }
+                                                                    }
                 });
                 property = clone(context.resolve(aType));
 
@@ -2024,3 +2022,4 @@ public class ModelResolver extends AbstractModelConverter implements ModelConver
         }
     }
 }
+
