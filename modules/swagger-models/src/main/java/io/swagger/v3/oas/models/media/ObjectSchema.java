@@ -33,6 +33,7 @@ public class ObjectSchema extends Schema<Object> {
         return this;
     }
 
+    @Override
     public ObjectSchema example(Object example) {
         if (example != null) {
             super.setExample(example.toString());
@@ -70,3 +71,4 @@ public class ObjectSchema extends Schema<Object> {
         return sb.toString();
     }
 }
+
